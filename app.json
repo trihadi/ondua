@@ -1,6 +1,6 @@
 {
 	"name": "iPad TechSpot Torrent Leecher",
-	"website": "http://ipadtechspot.blogspot.com",
+	"website": "https://www.digitalmaza.org",
 	"repository": "https://github.com/ipadtechspot/iTS-torrent",
 	"env": {
 		"TITLE": {
