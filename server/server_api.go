@@ -10,7 +10,7 @@ import (
 
 	"github.com/anacrolix/torrent/metainfo"
 
-	"github.com/ipadtechspot/iTS-torrent/engine"
+	"github.com/kosim21/kosim-torrent/engine"
 )
 
 func (s *Server) api(r *http.Request) error {
