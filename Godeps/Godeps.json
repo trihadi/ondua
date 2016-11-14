@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/ipadtechspot/iTS-torrent",
+	"ImportPath": "github.com/kosim21/kosim-torrent",
 	"GoVersion": "go1.5.3",
 	"Deps": [
 		{
