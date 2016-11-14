@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/ipadtechspot/iTS-torrent/server"
+	"github.com/kosim21/kosim-torrent/server"
 	"github.com/jpillora/opts"
 )
 
@@ -11,9 +11,9 @@ var VERSION = "0.0.0-src" //set with ldflags
 
 func main() {
 	s := server.Server{
-		Title:      "iPad TechSpot Torrent Leecher",
+		Title:      "kosim Torrent",
 		Port:       3000,
-		ConfigPath: "iTS-torrent.json",
+		ConfigPath: "kosim-torrent.json",
 	}
 
 	o := opts.New(&s)
