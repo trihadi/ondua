@@ -5,11 +5,11 @@
 	"env": {
 		"TITLE": {
 			"description": "Optionally set the title of this instance (defaults to 'kosim Torrent')",
-			"required": false
+			"required": true
 		},
 		"AUTH": {
 			"description": "Optional HTTP authentication in the form user:password",
-			"required": false
+			"required": true
 		}
 	}
 }
