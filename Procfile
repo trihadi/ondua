@@ -1,1 +1,1 @@
-web: iTS-torrent
+web: kosim-torrent
