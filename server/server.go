@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ipadtechspot/iTS-torrent/engine"
-	"github.com/ipadtechspot/iTS-torrent/static"
+	"github.com/kosim21/kosim-torrent/engine"
+	"github.com/kosim21/kosim-torrent/static"
 	"github.com/jpillora/go-realtime"
 	"github.com/jpillora/requestlog"
 	"github.com/jpillora/scraper/scraper"
