@@ -1,4 +1,4 @@
-<img src="https://cloud.githubusercontent.com/assets/633843/9855504/f30a715c-5b51-11e5-83f3-f4fab03e5459" alt="screenshot"/>
+<img src="https://s14.postimg.org/97kllozpd/Demo.png" alt="screenshot"/>
 
 **kosim Torrent** is an a self-hosted remote torrent client, written in Go (golang). You start torrents remotely, which are downloaded as sets of files on the local disk of the server, which are then retrievable or streamable via HTTP.
 
