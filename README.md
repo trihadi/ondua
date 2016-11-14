@@ -43,7 +43,7 @@ Click this button to...
 ```
 $ kosim-torrent --help
 
-  Usage: iTS-torrent [options]
+  Usage: kosim-torrent [options]
 
   Options:
   --title, -t        Title of this instance (default kosim Torrent, env TITLE)
