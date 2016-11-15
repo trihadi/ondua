@@ -7,9 +7,8 @@
 			"description": "Optionally set the title of this instance (defaults to 'kosim Torrent')",
 			"required": true
 		},
-		"AUTH": {
-			"description": "Optional HTTP authentication in the form user:password",
-			"required": true
+		"AUTH_USER": { "required": false },
+		"AUTH_PASSWORD": { "required": false }
 		}
 	}
 }
