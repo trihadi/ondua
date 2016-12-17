@@ -1,10 +1,10 @@
 {
-	"name": "kosim Torrent",
+	"name": "Cloud Torrent",
 	"website": "https://dmus.in/cBbacZMP",
 	"repository": "https://github.com/kosim21/kosim-torrent",
 	"env": {
 		"TITLE": {
-			"description": "Optionally set the title of this instance (defaults to 'kosim Torrent')",
+			"description": "Optionally set the title of this instance (defaults to 'Cloud Torrent')",
 			"required": false
 		},
 		"AUTH": {
