@@ -31,7 +31,7 @@ var defaultSearchConfig = []byte(`{
 	},
 	"abb": {
 		"name": "The Audiobook Bay",
-		"url": "http://audiobookbay.me/page/{{page:1}}?s={{query}}",
+		"url": "http://audiobookbay.me/page/{{page:1}}/?s={{query}}",
 		"list": "#content > div",
 		"result": {
 			"name":["div.postTitle > h2 > a","@title"],
