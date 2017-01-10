@@ -5,7 +5,7 @@ package server
 var defaultSearchConfig = []byte(`{
 	"kat": {
 		"name": "Kickass Torrents",
-		"url": "https://kat.how/usearch/{{query}}/{{page:1}}/?field=seeders&sorder=desc",
+		"url": "https://kat.how/search.php?q={{query}}/{{page:1}}/?field=seeders&sorder=desc",
 		"list": "#mainSearchTable table tr[id]",
 		"result": {
 			"name":".cellMainLink",
