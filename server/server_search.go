@@ -29,17 +29,23 @@ var defaultSearchConfig = []byte(`{
 			"peers": "td:nth-child(4)"
 		}
 	},
-        "et": {
-		"name": "ExtraTorrent",
-		"url": "https://extratorrent.cc/search/?search={{query}}&s_cat=&pp=&srt=seeds&order=desc&page={{page:1}}",
-		"list": "table.tl tr.tlr",
+        "abb": {
+		"name": "The Audiobook Bay",
+		"url": "http://audiobookbay.me/page/{{page:1}}?s={{query}}",
+		"list": "#content > div",
 		"result": {
-			"name":["td.tli > a"],
-			"torrent": ["td:nth-child(1) a","@href","s/torrent_download/download/"],
-			"url": ["td.tli > a","@href"],
-			"size": "td:nth-child(5)",
-			"seeds": "td.sy",
-			"peers": "td.ly"
+			"name":["div.postTitle > h2 > a","@title"],
+			"url":["div.postTitle > h2 > a","@href"],
+			"seeds": "div.postContent > p:nth-child(3) > span:nth-child(1)",
+			"peers": "div.postContent > p:nth-child(3) > span:nth-child(3)"
+		}
+	},
+	"abb/item": {
+		"name": "The Audiobook Bay (Item)",
+		"url": "http://audiobookbay.me{{item}}",
+		"result": {
+			"infohash": "/td>([a-f0-9]+)</",
+			"tracker": "table tr td:nth-child(2)"
 		}
 	}
 }`)
