@@ -5,7 +5,7 @@ package server
 var defaultSearchConfig = []byte(`{
 	"kat": {
 		"name": "Kickass Torrents",
-		"url": "https://kat.cr/usearch/{{query}}/{{page:1}}/?field=seeders&sorder=desc",
+		"url": "https://kat.how/usearch/{{query}}/{{page:1}}/?field=seeders&sorder=desc",
 		"list": "#mainSearchTable table tr[id]",
 		"result": {
 			"name":".cellMainLink",
@@ -18,7 +18,7 @@ var defaultSearchConfig = []byte(`{
 	},
 	"tpb": {
 		"name": "The Pirate Bay",
-		"url": "https://thepiratebay.se/search/{{query}}/{{page:0}}/7//",
+		"url": "https://thepiratebay.org/search/{{query}}/{{page:0}}/7//",
 		"list": "#searchResult > tbody > tr",
 		"result": {
 			"name":"a.detLink",
@@ -31,7 +31,7 @@ var defaultSearchConfig = []byte(`{
 	},
 	"abb": {
 		"name": "The Audiobook Bay",
-		"url": "http://audiobookbay.co/page/{{page:1}}?s={{query}}",
+		"url": "http://audiobookbay.me/page/{{page:1}}?s={{query}}",
 		"list": "#content > div",
 		"result": {
 			"name":["div.postTitle > h2 > a","@title"],
@@ -42,7 +42,7 @@ var defaultSearchConfig = []byte(`{
 	},
 	"abb-item": {
 		"name": "The Audiobook Bay (Item)",
-		"url": "http://audiobookbay.co{{path}}",
+		"url": "http://audiobookbay.me{{path}}",
 		"result": {
 			"infohash": "/td>([a-f0-9]+)</",
 			"tracker": "table tr td:nth-child(2)"
