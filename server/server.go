@@ -104,7 +104,8 @@ func (s *Server) Run(version string) error {
 	//configure engine
 	c := engine.Config{
 		DownloadDirectory: "./downloads",
-		EnableUpload:      true,
+		EnableUpload:      false,
+		EnableSeeding:     true,
 		AutoStart:         true,
 	}
 	if _, err := os.Stat(s.ConfigPath); err == nil {
