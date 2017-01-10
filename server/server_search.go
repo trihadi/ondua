@@ -30,22 +30,22 @@ var defaultSearchConfig = []byte(`{
 		}
 	},
 	"abb": {
-		"name": "The Audiobook Bay",
-		"url": "http://audiobookbay.me/page/{{page:1}}?s={{query}}",
-		"list": "#content > div",
+		"name": "1337X",
+		"url": "http://1337x.to/search/{{query}}/seeders/desc/{{page:1}}/",
+		"list": ".box-info-detail table.table tr",
 		"result": {
-			"name":["div.postTitle > h2 > a","@title"],
-			"path":["div.postTitle > h2 > a","@href"],
-			"seeds": "div.postContent > p:nth-child(3) > span:nth-child(1)",
-			"peers": "div.postContent > p:nth-child(3) > span:nth-child(3)"
+			"name":[".coll-1 a:nth-child(2)"],
+			"url":[".coll-1 a:nth-child(2)", "@href"],
+			"seeds": ".coll-2",
+			"peers": ".coll-3",
+			"size": [".coll-4", "/([\\d\\.]+ [KMGT]?B)/"]
 		}
 	},
 	"abb-item": {
-		"name": "The Audiobook Bay (Item)",
-		"url": "http://audiobookbay.me{{path}}",
+		"name": "1337X (Item)",
+		"url": "http://1337x.to{{item}}",
 		"result": {
-			"infohash": "/td>([a-f0-9]+)</",
-			"tracker": "table tr td:nth-child(2)"
+			"magnet": ["a.btn-magnet","@href"]
 		}
 	}
 }`)
