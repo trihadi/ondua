@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kosim21/kosim-torrent/engine"
-	"github.com/kosim21/kosim-torrent/static"
+	"github.com/kosim21/kzm/engine"
+	"github.com/kosim21/kzm/static"
 	"github.com/jpillora/go-realtime"
 	"github.com/jpillora/requestlog"
 	"github.com/jpillora/scraper/scraper"
@@ -27,7 +27,7 @@ type Server struct {
 	Title      string `help:"Title of this instance" env:"TITLE"`
 	Port       int    `help:"Listening port" env:"PORT"`
 	Host       string `help:"Listening interface (default all)"`
-	Auth       string `help:"Optional basic auth in form 'user:password'" env:"TOKEN"`
+	Auth       string `help:"Optional basic auth in form 'user:password'" env:"AUTH"`
 	ConfigPath string `help:"Configuration file path"`
 	KeyPath    string `help:"TLS Key file path"`
 	CertPath   string `help:"TLS Certicate file path" short:"r"`
