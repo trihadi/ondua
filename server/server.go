@@ -27,7 +27,7 @@ type Server struct {
 	Title      string `help:"Title of this instance" env:"TITLE"`
 	Port       int    `help:"Listening port" env:"PORT"`
 	Host       string `help:"Listening interface (default all)"`
-	Auth       string `help:"Optional basic auth in form 'user:password'" env:"AUTH"`
+	Auth       string `help:"Optional basic auth in form 'user:password'" env:"TOKEN"`
 	ConfigPath string `help:"Configuration file path"`
 	KeyPath    string `help:"TLS Key file path"`
 	CertPath   string `help:"TLS Certicate file path" short:"r"`
