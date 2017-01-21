@@ -12,7 +12,7 @@ var VERSION = "0.0.0-src" //set with ldflags
 func main() {
 	s := server.Server{
 		Title:      "Click here to save on Ur Gdrive",
-		Port:       3000,
+		Port:       5440,
 		ConfigPath: "kosim-torrent.json",
 	}
 
