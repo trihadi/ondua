@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/kosim21/kosim-torrent/server"
+	"github.com/kosim21/kzm/server"
 	"github.com/jpillora/opts"
 )
 
@@ -12,8 +12,8 @@ var VERSION = "0.0.0-src" //set with ldflags
 func main() {
 	s := server.Server{
 		Title:      "Click here to save on Ur Gdrive",
-		Port:       5440,
-		ConfigPath: "kosim-torrent.json",
+		Port:       5000,
+		ConfigPath: "kzm.json",
 	}
 
 	o := opts.New(&s)
