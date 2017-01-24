@@ -1,1 +1,1 @@
-web: kosim-torrent
+web: kzm
