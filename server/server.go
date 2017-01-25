@@ -104,8 +104,8 @@ func (s *Server) Run(version string) error {
 	//configure engine
 	c := engine.Config{
 		DownloadDirectory: "./downloads",
-		EnableUpload:      true,
-		
+		EnableUpload:      false,
+		EnableSeeding:     true,
 		AutoStart:         true,
 	}
 	if _, err := os.Stat(s.ConfigPath); err == nil {
@@ -118,7 +118,7 @@ func (s *Server) Run(version string) error {
 		}
 	}
 	if c.IncomingPort <= 0 || c.IncomingPort >= 65535 {
-		c.IncomingPort = 65535
+		c.IncomingPort = 65529
 	}
 	if err := s.reconfigure(c); err != nil {
 		return fmt.Errorf("initial configure failed: %s", err)
